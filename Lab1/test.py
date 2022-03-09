@@ -23,9 +23,9 @@ def test_orders():  # Тест на наличие столбцов в Orders
 
 def test_sum_clients():  # Тест на наличие 10 строк в Clients
     app.fill_db()
-    assert len(app.Clients.select()) > 5
+    assert len(app.Clients.select()) > 10
 
 
 def test_sum_orders():  # Тест на наличие 10 строк в Orders
     app.fill_db()
-    assert len(app.Orders.select()) > 5
+    assert len(app.Orders.select()) > 10

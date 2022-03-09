@@ -42,7 +42,7 @@ def init_db():
 
 def fill_db():
     # ---Create table---
-    people_number = 7
+    people_number = 11
     print('--- Filling out database ---')
     clients_list = []
     name_arr = ["Hicks", "Clark", "Casey", "Miller", "Fisher", "Boyd", "Castillo", "Pittman", "Vega", "Ramirez", "Erickson", "Weaver",
