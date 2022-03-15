@@ -5,8 +5,6 @@ import random
 import os.path
 import pytest
 
-print("test")
-
 db_name = 'database.db'
 db = SqliteDatabase(db_name)
 
