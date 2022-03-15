@@ -114,5 +114,6 @@ if __name__ == "__main__":
             init_db()
             fill_db()
             show_db("Clients")
+            show_db("Orders")
            
      
