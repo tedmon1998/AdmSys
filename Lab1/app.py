@@ -8,8 +8,6 @@ import pytest
 db_name = 'database.db'
 db = SqliteDatabase(db_name)
 
-print("Lab2")
-
 class BaseModel(Model):
     class Meta:
         database = db
@@ -115,8 +113,3 @@ if __name__ == "__main__":
             fill_db()
             show_db("Clients")
             show_db("Orders")
-<<<<<<< HEAD
-=======
-           
-     
->>>>>>> e4d86d14d1663332954af2c153b11ccbb93c8ef5
