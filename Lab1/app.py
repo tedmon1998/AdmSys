@@ -5,6 +5,8 @@ import random
 import os.path
 import pytest
 
+print("Hook")
+
 db_name = 'database.db'
 db = SqliteDatabase(db_name)
 
