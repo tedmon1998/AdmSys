@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    options {
+        timestamps()
+    }
+
+    stages {
+
+        stage("Start Install Libraries") {
+            steps {
+                sh 'python3 -m pip install -r Lab1/requirements.txt'
+                echo 'End install libraries'
+            }
+        }
+
+        stage("Start PyTest") {
+            steps {
+                sh 'pytest Lab1/test.py --junitxml=Lab1/report/out_report.xml'
+                echo 'Pytest is ready'
+            }
+        }
+
+        stage("app start...") {
+            steps {
+                sh 'python3 Lab1/app.py start'
+                echo 'Lab work done :) ...'
+            }
+        }
+    }
+}
